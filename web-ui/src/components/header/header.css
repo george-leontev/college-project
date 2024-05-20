@@ -25,15 +25,15 @@
 .default-button {
     background-color: #1e1f20;
     border: #1e1f20 solid 1px;
+    border-radius: 20px;
     width: 150px;
-    color: #fff;
+    color: aliceblue;
     padding: 10px 20px;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    border-radius: 20px;
 }
 
 .default-button:hover {

@@ -23,7 +23,7 @@ export const Header = () => {
                 <TextField sx={{ width: '400px' }} label="Search" variant="outlined" />
             </div>
 
-            <div className='main-nav-bar'> 
+            <div className='main-nav-bar'>
                 <Link href='http://localhost:3000/catalog'>
                     <button className='default-button'>Catalog</button>
                 </Link>
@@ -37,11 +37,11 @@ export const Header = () => {
                 </Link>
 
                 <Link href='http://localhost:3000/catalog'>
-                    <button className='default-button'>Log in</button>
+                    <button className='default-button'>My account</button>
                 </Link>
 
-                <Link href='http://localhost:3000/catalog'>
-                    <button className='default-button'>Sign in</button>
+                <Link href='http://localhost:3000/registration'>
+                    <button className='default-button'>Log in</button>
                 </Link>
 
             </div>
