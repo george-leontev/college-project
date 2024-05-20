@@ -1,3 +1,27 @@
+.header-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 90px;
+    padding: 20px;
+}
+
+.logo-component {
+    display: flex;
+    gap: 16px;
+}
+
+.search-component {
+    display: flex;
+    flex: 1;
+}
+
+.main-nav-bar {
+    display: flex;
+    gap: 22px;
+}
+
 .default-button {
     background-color: #1e1f20;
     border: #1e1f20 solid 1px;
