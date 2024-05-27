@@ -33,7 +33,7 @@ export const MainPage = () => {
                         <TwitterIcon style={{ fontSize: "2.5rem" }}></TwitterIcon>
                     </IconButton>
                 </div>
-                <img style={{ flex: 1 }} src="images/home-cat.jpg" alt="home cat" />
+                <img style={{ width: '900px' }} src="images/home-page-cat.webp" alt="home cat" />
             </div>
         </div>
 

@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <div className='header-component'>
             <div className='logo-component'>
-                <Icon sx={{ cursor: 'pointer' }}>
+                <Icon sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
                     <LogoCatIcon></LogoCatIcon>
                 </Icon>
                 <Typography
@@ -43,7 +43,6 @@ export const Header = () => {
                 <Link href='http://localhost:3000/registration'>
                     <button className='default-button'>Log in</button>
                 </Link>
-
             </div>
         </div>
     );

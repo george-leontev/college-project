@@ -5,10 +5,6 @@
             "name": "web-ui"
         },
         {
-            "path": "./web-api",
-            "name": "web-api"
-        },
-        {
             "path": "./",
             "name": ".workspace"
         },

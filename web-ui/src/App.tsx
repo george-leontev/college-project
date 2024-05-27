@@ -9,7 +9,7 @@ import { RegistrationPage } from './pages/registration/registration-page';
 
 function App() {
     return (
-        <div style={{display: 'flex'}}>
+        <div style={{ display: 'flex', height: '100vh', width: '100vw', overflow: 'hidden' }}>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<MainPage />}></Route>

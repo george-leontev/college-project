@@ -1,11 +1,13 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import './card.css'
+
+import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
 export const CardComponent = () => {
     return (
         <Card sx={{ border: 'solid 1px black' }}>
             <CardMedia
                 sx={{ height: 300, width: 290 }}
-                image="/images/home-cat.jpg"
+                image="/images/home-page-cat.webp"
                 title="caaat"
             />
             <CardContent>
@@ -13,9 +15,8 @@ export const CardComponent = () => {
                     Caaaat
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small">Buy</Button>
-                <Button size="small">Learn More</Button>
+            <CardActions sx={{display: 'flex', justifyContent: 'center'}}>
+                <button className="buy-button">Buy</button>
             </CardActions>
         </Card>
     );
