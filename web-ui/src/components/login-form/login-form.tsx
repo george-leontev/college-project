@@ -1,12 +1,18 @@
 import { Typography, FormControl, FormLabel, Input, Link } from "@mui/material";
 import { GoogleSvgIcon } from "../../icons/google-svg-icon";
 
-export const RegistrationForm = () => {
+export const LoginForm = () => {
     return (
         <div className='form-registration-component' style={{ display: 'flex', flex: 1, }}>
             <Typography variant='h4'>Login into the cat universe</Typography>
 
             <button className='google-login-button'>Login using Google <GoogleSvgIcon /> </button>
+
+            <div style={{ width: "100%", display: "flex", alignItems: 'center' }}>
+                <div style={{ borderBottom: "solid #a2a2a2 1px", flex: 3 }}></div>
+                <span style={{ color: '#a2a2a2', padding: '10px' }}>OR</span>
+                <div style={{ borderBottom: "solid #a2a2a2 1px", flex: 3 }}></div>
+            </div>
 
             <FormControl sx={{ width: '450px' }}>
                 <FormLabel sx={{ fontSize: '18px' }}>Name</FormLabel>

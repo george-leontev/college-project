@@ -1,12 +1,12 @@
-import './registration-page.css';
+import './login-page.css';
 
 import { Icon, Typography } from '@mui/material';
 
 import { IoLogoOctocat as LogoCatIcon } from "react-icons/io5";
-import { RegistrationForm } from '../../components/registration-form/registration-form';
+import { LoginForm } from '../../components/login-form/login-form';
 
 
-export const RegistrationPage = () => {
+export const LoginPage = () => {
     return (
         <div className='registration-page'>
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -21,7 +21,7 @@ export const RegistrationPage = () => {
                     </Typography>
                 </div>
 
-                <RegistrationForm />
+                <LoginForm />
             </div>
 
             <img className='registration-image' src="/images/registration-image.jpg" alt="img" />
