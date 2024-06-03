@@ -28,24 +28,23 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background-color: #1e1f20;
-    border: #1e1f20 solid 1px;
-    border-radius: 20px;
     width: 170px;
-    color: aliceblue;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: #383838;
+    color: white;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
-    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
     cursor: pointer;
 }
 
 .default-button:hover {
-    background-color: #333;
-    border-color: #333;
+    background-color: #212121;
+    color: white;
 }
 
 .default-button:active {
-    background-color: #333;
-    border-color: #333;
-    transform: translateX(3px);
+    transform: scale(0.9);
 }

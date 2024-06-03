@@ -7,5 +7,6 @@ export type CardComponentProps = {
 }
 
 export type CartPageProps = {
-    catalogItemId: string
+    catalogItemId: string;
+    setIsCartPageVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }

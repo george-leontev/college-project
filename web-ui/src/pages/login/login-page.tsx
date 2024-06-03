@@ -14,13 +14,8 @@ export const LoginPage = () => {
                     <Icon fontSize='large' sx={{ cursor: 'pointer' }}>
                         <LogoCatIcon />
                     </Icon>
-                    <Typography
-                        variant="h4"
-                    >
-                        BUYKOT
-                    </Typography>
+                    <Typography variant="h4">BUYKOT</Typography>
                 </div>
-
                 <LoginForm />
             </div>
 
