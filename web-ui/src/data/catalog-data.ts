@@ -7,7 +7,7 @@ export const data: CatalogItemModel[] = [
         breed: 'Ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
         age: '1 year',
-        homeland: 'San-Marina(Europe)',
+        homeland: 'San-Marina(Eeurope)',
         fullDescription: 'Кот-сантехник, который не только согреет ваше сердце, но и починит все ваши протекающие трубы и засоры! Настоящий мастер своего дела. Он знает все секреты сантехники и может справиться с любой поломкой: от капающего крана до забитого унитаза.Он также будет с радостью играть с вами в прятки, бегать за лазерной указкой и даже помогать вам выбирать новые шторы для ванной.',
         description: "blah-blah-blah",
         image: "/images/home-page-cat.webp",
