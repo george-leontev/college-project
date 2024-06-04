@@ -1,13 +1,12 @@
 import { Typography } from "@mui/material";
 import { Link } from '@mui/material';
 
-import { HiOutlineArrowSmallLeft as ArrowIcon } from "react-icons/hi2";
-
 import { data } from '../../data/catalog-data';
 import { CatalogItemModel } from '../../models/catalog-data-model';
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { ArrowIcon } from "../../icons/icons";
 
 
 export const AboutProduct = () => {

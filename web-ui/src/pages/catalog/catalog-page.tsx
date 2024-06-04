@@ -1,7 +1,6 @@
 import './catalog-page.css';
 
 import { data } from '../../data/catalog-data';
-
 import { Header } from "../../components/header/header";
 import { CardComponent } from "../../components/card/card";
 

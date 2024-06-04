@@ -1,0 +1,14 @@
+export { TbCirclePercentage as PercentIcon } from "react-icons/tb";
+export { FiHeart as LikeIcon } from "react-icons/fi";
+export { FcLike as LikedIcon } from "react-icons/fc";
+export { HiOutlineArrowSmallLeft as ArrowIcon } from "react-icons/hi2";
+export { IoLogoOctocat as LogoCatIcon } from "react-icons/io5";
+export { CiSettings as SettingsIcon } from "react-icons/ci";
+export { CiShoppingCart as CartIcon } from "react-icons/ci";
+export { CiLogin as LoginIcon } from "react-icons/ci";
+export { GoTasklist as CatalogIcon } from "react-icons/go";
+export { CiCircleInfo as AboutUsIcon } from "react-icons/ci";
+export { SlSocialVkontakte as VKIcon } from "react-icons/sl";
+export { PiInstagramLogoLight as InstagramIcon } from "react-icons/pi";
+export { LiaTelegramPlane as TelegramIcon } from "react-icons/lia";
+export { CiTwitter as TwitterIcon } from "react-icons/ci";

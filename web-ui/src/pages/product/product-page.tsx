@@ -1,15 +1,12 @@
 import './product-page.css';
 
-import { TbCirclePercentage as PercentIcon } from "react-icons/tb";
-import { FiHeart as LikeIcon } from "react-icons/fi";
-import { FcLike as LikedIcon } from "react-icons/fc";
-
 import { useState } from 'react';
 import { Header } from '../../components/header/header';
 
 import { Typography } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AboutProduct } from '../../components/about-product/about-product';
+import { LikeIcon, LikedIcon, PercentIcon } from '../../icons/icons';
 
 
 export const ProductPage = () => {

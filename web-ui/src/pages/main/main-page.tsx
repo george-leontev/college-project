@@ -2,12 +2,8 @@ import './main-page.css';
 
 import { IconButton, Rating, Typography } from "@mui/material";
 
-import { SlSocialVkontakte as VKIcon } from "react-icons/sl";
-import { PiInstagramLogoLight as InstagramIcon } from "react-icons/pi";
-import { LiaTelegramPlane as TelegramIcon } from "react-icons/lia";
-import { CiTwitter as TwitterIcon } from "react-icons/ci";
-
 import { Header } from "../../components/header/header";
+import { TelegramIcon, VKIcon, InstagramIcon, TwitterIcon } from '../../icons/icons';
 
 
 export const MainPage = () => {
@@ -21,16 +17,16 @@ export const MainPage = () => {
                 </div>
                 <div className='contacts-bar'>
                     <IconButton size="large">
-                        <TelegramIcon style={{ fontSize: "2.5rem" }}></TelegramIcon>
+                        <TelegramIcon style={{ fontSize: "2.5rem" }} />
                     </IconButton>
                     <IconButton size="large">
-                        <VKIcon style={{ fontSize: "2.5rem" }}></VKIcon>
+                        <VKIcon style={{ fontSize: "2.5rem" }} />
                     </IconButton>
                     <IconButton size="large">
-                        <InstagramIcon style={{ fontSize: "2.5rem" }}></InstagramIcon>
+                        <InstagramIcon style={{ fontSize: "2.5rem" }} />
                     </IconButton>
                     <IconButton size="large">
-                        <TwitterIcon style={{ fontSize: "2.5rem" }}></TwitterIcon>
+                        <TwitterIcon style={{ fontSize: "2.5rem" }} />
                     </IconButton>
                 </div>
                 <img style={{ width: '900px' }} src="images/home-page-cat.webp" alt="home cat" />

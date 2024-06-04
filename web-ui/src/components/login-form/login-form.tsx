@@ -1,7 +1,14 @@
 import { Typography, FormControl, FormLabel, Input, Link } from "@mui/material";
 import { GoogleSvgIcon } from "../../icons/google-svg-icon";
+import { useState } from "react";
 
 export const LoginForm = () => {
+    const [login, setLogin] = useState(false);
+
+    const isLoginClick = () => {
+        setLogin(true);
+    }
+
     return (
         <div className='form-registration-component' style={{ display: 'flex', flex: 1, }}>
             <Typography variant='h4'>Login into the cat universe</Typography>
@@ -32,7 +39,7 @@ export const LoginForm = () => {
 
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '20px' }}>
                 <Link href='http://localhost:3000/catalog'>
-                    <button className='registration-button'>Login</button>
+                    <button className='registration-button' onClick={isLoginClick}>Login</button>
                 </Link>
 
                 <div style={{ display: 'flex', gap: '5px' }}>

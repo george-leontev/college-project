@@ -1,14 +1,9 @@
 import { Link } from "@mui/material";
-
-
-import { CiSettings as SettingsIcon } from "react-icons/ci";
-import { CiShoppingCart as CartIcon } from "react-icons/ci";
-import { CiLogin as LoginIcon } from "react-icons/ci";
-import { GoTasklist as CatalogIcon } from "react-icons/go";
-import { CiCircleInfo as AboutUsIcon } from "react-icons/ci";
+import { CatalogIcon, CartIcon, AboutUsIcon, SettingsIcon, LoginIcon } from "../../icons/icons";
 
 
 export const Navbar = () => {
+    
     return (
         <div className='main-nav-bar'>
             <Link underline="none" href='/catalog'>

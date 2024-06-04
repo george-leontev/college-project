@@ -2,7 +2,7 @@ import './header.css';
 
 import { Typography, Icon, TextField } from '@mui/material';
 import { Navbar } from '../header-navbar/header-navbar';
-import { IoLogoOctocat as LogoCatIcon } from "react-icons/io5";
+import { LogoCatIcon } from '../../icons/icons';
 
 
 export const Header = () => {
@@ -10,7 +10,7 @@ export const Header = () => {
         <div className='header-component'>
             <div className='logo-component'>
                 <Icon sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-                    <LogoCatIcon></LogoCatIcon>
+                    <LogoCatIcon />
                 </Icon>
                 <Typography
                     variant="h6"
