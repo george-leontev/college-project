@@ -79,7 +79,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: 'cdc2eea5-50f1-4f09-bde9-9432033d8447',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -90,7 +90,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: 'a86c946b-167d-43a7-b340-6fb5c5e2e770',
         name: 'Sanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -101,7 +101,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: '0d663dc3-7b04-4e8e-b084-4835b1d1fb63',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -112,7 +112,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: 'ad482900-9d06-422d-a165-c6bdf50654ea',
         name: 'Sanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -123,7 +123,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: 'a0d1bd87-2f4f-42fa-908f-c4f59e6594c0',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -134,7 +134,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: '27b4f026-caf2-4c83-835e-24c4c7b991a4',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -145,7 +145,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: '17415beb-e394-483e-80e2-1fb5d3fedbe2',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
@@ -156,7 +156,7 @@ export const data: CatalogItemModel[] = [
         image: "/images/home-page-cat.webp",
     },
     {
-        id: '',
+        id: 'bc6aff09-73a3-4352-8d5c-b91da09a261f',
         name: 'Vanya',
         breed: 'ultra cat',
         specialization: 'Cleaning, repair of sanitary equipment',
