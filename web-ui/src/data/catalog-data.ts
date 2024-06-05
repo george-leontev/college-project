@@ -4,7 +4,7 @@ export const data: CatalogItemModel[] = [
     {
         id: '5703adae-79e0-4482-9e62-33237581451b',
         name: 'Bobik',
-        breed: 'Ultra cat',
+        breed: 'AZALYA cat',
         specialization: 'Cleaning, repair of sanitary equipment',
         age: '1 year',
         homeland: 'San-Marina(Eeurope)',
