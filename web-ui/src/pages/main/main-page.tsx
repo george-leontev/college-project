@@ -29,7 +29,12 @@ export const MainPage = () => {
                         <TwitterIcon style={{ fontSize: "2.5rem" }} />
                     </IconButton>
                 </div>
-                <img style={{ width: '900px' }} src="images/home-page-cat.webp" alt="home cat" />
+                <div style={{ display: 'flex', justifyContent: 'center', position: 'relative', width: '75%' }}>
+                    <div style={{ position: 'absolute', fontSize: '70px', top: '-60px' }}>
+                        Help in finding new friends
+                    </div>
+                    <img style={{ position: 'relative', zIndex: '1', width: '560px' }} src="images/home-page-cat.webp" alt="home cat" />
+                </div>
             </div>
         </div>
 

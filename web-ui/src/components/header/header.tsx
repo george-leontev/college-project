@@ -21,7 +21,7 @@ export const Header = () => {
             </div>
 
             <div className='search-component'>
-                <TextField sx={{ width: '400px' }} label="Search" variant="outlined" />
+                <TextField size='small' sx={{ width: '300px'}} label="Search" variant="outlined" />
             </div>
 
             <Navbar />

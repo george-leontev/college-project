@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  width: 140px;
+  width: 170px;
+  height: 34px;
   padding: 6px;
   border: #000000 solid 1px;
-  border-radius: 16px;
+  border-radius: 12px;
   background-color: #383838;
   color: aliceblue;
   font-size: 16px;

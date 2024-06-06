@@ -11,10 +11,10 @@ export const LoginPage = () => {
         <div className='registration-page'>
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <div className='registration-logo-component'>
-                    <Icon fontSize='large' sx={{ cursor: 'pointer' }}>
+                    <Icon fontSize='medium' sx={{ cursor: 'pointer' }}>
                         <LogoCatIcon />
                     </Icon>
-                    <Typography variant="h4">BUYKOT</Typography>
+                    <Typography variant="h5">BUYKOT</Typography>
                 </div>
                 <LoginForm />
             </div>

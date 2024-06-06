@@ -7,15 +7,18 @@ import './card.css';
 export const CardComponent = ({ data, onBuyClick }: CardComponentProps) => {
 
     return (
-        <Card sx={{ border: 'solid 1px #a2a2a2', borderRadius: '20px', padding: '20px' }}>
+        <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', border: 'solid 1px #a2a2a2', borderRadius: '20px', width: '410px' }}>
             <CardMedia
-                sx={{ height: 320, width: 300 }}
+                sx={{ height: 320, width: 280 }}
                 image={data.image}
                 title="caaat"
             />
-            <CardContent>
+            <CardContent sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '50px' }}>
                 <Typography variant="h5" component="div">
                     {data.description}
+                </Typography>
+                <Typography sx={{ marginLeft: '30px' }} variant="h5" component="div">
+                    <p style={{ backgroundColor: '#dae2e5', padding: '6px', borderRadius: '8px' }}>1500 $</p>
                 </Typography>
             </CardContent>
             <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>

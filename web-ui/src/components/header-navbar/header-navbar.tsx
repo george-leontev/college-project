@@ -1,11 +1,18 @@
 import { Link } from "@mui/material";
-import { CatalogIcon, CartIcon, AboutUsIcon, SettingsIcon, LoginIcon } from "../../icons/icons";
+import { CatalogIcon, CartIcon, AboutUsIcon, SettingsIcon, LoginIcon, HomeIcon } from "../../icons/icons";
 
 
 export const Navbar = () => {
-    
+
     return (
-        <div className='main-nav-bar'>
+        <div className='main-nav-bar'> 
+            <Link underline="none" href='/home'>
+                <button className='default-button'>
+                    <p>Home</p>
+                    <HomeIcon style={{ fontSize: '24px' }} />
+                </button>
+            </Link>
+
             <Link underline="none" href='/catalog'>
                 <button className='default-button'>
                     <p>Catalog</p>
@@ -17,13 +24,6 @@ export const Navbar = () => {
                 <button className='default-button'>
                     <p>Cart</p>
                     <CartIcon style={{ fontSize: '24px' }} />
-                </button>
-            </Link>
-
-            <Link underline="none" href='/catalog'>
-                <button className='default-button'>
-                    <p>About us</p>
-                    <AboutUsIcon style={{ fontSize: '24px' }} />
                 </button>
             </Link>
 

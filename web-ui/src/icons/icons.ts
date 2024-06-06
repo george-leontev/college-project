@@ -12,3 +12,4 @@ export { SlSocialVkontakte as VKIcon } from "react-icons/sl";
 export { PiInstagramLogoLight as InstagramIcon } from "react-icons/pi";
 export { LiaTelegramPlane as TelegramIcon } from "react-icons/lia";
 export { CiTwitter as TwitterIcon } from "react-icons/ci";
+export { CiHome as HomeIcon } from "react-icons/ci";

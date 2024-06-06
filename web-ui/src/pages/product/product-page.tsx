@@ -20,19 +20,19 @@ export const ProductPage = () => {
     return (
         <div className="cart-page">
             <Header />
-            <div style={{ display: 'flex',padding: '90px' }}>
+            <div style={{ display: 'flex', padding: '20px' }}>
 
                 <AboutProduct />
 
                 <div className='add-product-to-cart'>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                         <p style={{ backgroundColor: '#dae2e5', padding: '6px', borderRadius: '8px' }}>1500 $</p>
-                        <p style={{ textDecoration: 'line-through', color: '#a8a8a8' }}>2000 $</p>
+                        <p style={{ textDecoration: 'line-through', color: '#a8a8a8' }}>3500 $</p>
                     </div>
 
                     <button className='discount-button' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <PercentIcon style={{ fontSize: '20px' }} />
-                        <p style={{ fontWeight: '500' }}>Do you want a discount?</p>
+                        <PercentIcon style={{ fontSize: '16px' }} />
+                        <p style={{ fontSize: '14px' }}>Do you want a discount?</p>
                     </button>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center', justifyContent: 'center' }}>
@@ -46,7 +46,7 @@ export const ProductPage = () => {
                                     exit={'exit'}
                                     onClick={() => setIsLike(prev => !prev)}
                                 >
-                                    <LikeIcon style={{fontSize: '22px'}} />
+                                    <LikeIcon style={{ fontSize: '22px' }} />
                                 </motion.div> :
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -56,7 +56,7 @@ export const ProductPage = () => {
                                         exit={'exit'}
                                         onClick={() => setIsLike(prev => !prev)}
                                     >
-                                        <LikedIcon style={{fontSize: '22px'}} />
+                                        <LikedIcon style={{ fontSize: '22px' }} />
                                     </motion.div>
                                 </AnimatePresence>}
                         </div>
