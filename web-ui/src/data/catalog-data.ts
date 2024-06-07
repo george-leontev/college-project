@@ -9,7 +9,6 @@ export const data: CatalogItemModel[] = [
         age: '7 months',
         homeland: 'England (Eurasia)',
         fullDescription: 'The guitarist puppy is a unique and talented rocker. He loves to wag his tail and is always ready to keep company at a rehearsal or concert. But most importantly, this puppy loves music! He happily sings along to his favorite performers.',
-        description: "Puppy guitar player",
         image: "/images/guitar-dog.jpg",
     },
     {
@@ -20,7 +19,6 @@ export const data: CatalogItemModel[] = [
         age: '3 year',
         homeland: 'San-Marina(Europe)',
         fullDescription: 'Country of origin: Russia (Eurasia). A soup cook dog is not just a pet, it is an experienced cook with exceptional abilities. She intuitively understands the perfect combination of ingredients and knows how to cook each dish to perfection using only her tongue and tail.',
-        description: "Dog soup maker",
         image: "/images/soup-dog.jpg",
     },
     {
@@ -31,7 +29,6 @@ export const data: CatalogItemModel[] = [
         age: '9 months',
         homeland: 'USA (North America)',
         fullDescription: 'Are you dreaming of a cybersecurity specialist who will not only protect your data, but also make you laugh heartily? Meet the Programmer Cat - the most brilliant and funniest cat in the world of technology! It can turn complex security protocols into understandable comic books and vulnerability discovery into a fun game. It makes keeping your data safe a source of endless surprises and uncontrollable laughter. The cat has a disadvantage: he cannot use a computer mouse, it irritates him. But this does not prevent him from being a real expert in the field of cybersecurity.',
-        description: "Cat programmer",
         image: "/images/programmer-cat.png",
     },
     {
@@ -42,7 +39,6 @@ export const data: CatalogItemModel[] = [
         age: '2.5 years',
         homeland: 'Austria (Europe)',
         fullDescription: 'The sausage dog is an exceptional specimen and has the softest fur. He is well trained: his favorite command is “Put it in your mouth”! And he happily performs various tricks, for example, “Give me your paw” or “Roll over to the other side.” He does not shed, does not bark, does not leave stains on the carpet, loves to hug and give his love, is always ready to keep company on a walk or on the sofa, and gets along well with children and other pets.',
-        description: "Megadog",
         image: "/images/sausage-dog.jpg",
     },
     {
@@ -53,7 +49,6 @@ export const data: CatalogItemModel[] = [
         age: '2 years',
         homeland: 'Russia (Eurasia)',
         fullDescription: 'Champion Cat - This amazing cat is an unrivaled master of sports, capable of performing the most difficult exercises with amazing ease and grace. Unparalleled Athletic Abilities: Licensed professional cat athlete with years of experience. Exceptional strength, speed and endurance. Ability to perform challenging exercises including high jumping, steeplechase running and climbing walls.',
-        description: "Champion cat",
         image: "/images/champion-cat.jpg",
     },
     {
@@ -64,7 +59,6 @@ export const data: CatalogItemModel[] = [
         age: '1 year',
         homeland: 'Colombia (South America)',
         fullDescription: 'Is a kitty with a hairdryer the perfect hair styling companion? This cat is a born hairdresser. She is charming and also has the superpower to tame the most unruly curls. Not only will it dry your hair, but it will also create stunning styling, be it elegant curls or a daring mohawk. So why settle for a regular hairdryer when you can have a fashionable and fluffy assistant? Get our blow dry kitty today and get ready for perfect styling and endless cozy moments!',
-        description: "Minicat",
         image: "/images/hairdryer-cat.jpg",
     },
     {
@@ -75,7 +69,6 @@ export const data: CatalogItemModel[] = [
         age: '2.5 year',
         homeland: 'El Salvador (South America)',
         fullDescription: 'Delivery cat - fast delivery and fun moments. He is an affordable way to turn your parcel delivery into an arena of courier comfort and endless laughter. Takes on all the difficult work. Our cat has a number of unique abilities that make parcel delivery special: Barking - to notify recipients that their package has arrived (or is almost there). Fluffy paws - for signing receipts in the most adorable way.',
-        description: "Delivery cat",
         image: "/images/delivery-cat.jpg",
     },
     {
@@ -86,7 +79,6 @@ export const data: CatalogItemModel[] = [
         age: '1 year',
         homeland: 'Iceland (Europe)',
         fullDescription: "The fisherman cat is a fluffy sea pet. Passion - fishing! Unfortunately, this cat's previous owner had to give him up due to a fish allergy. He loves to purr and rub against his legs, is always ready to keep company on a walk or on a cozy windowsill, gets along well with children and other pets, and has an inexhaustible supply of patience for tracking and catching fish. He is ready to sit for hours by an aquarium or pond, waiting for prey. If you are looking for a fun, loyal and loving pet with a unique personality, then this fishing cat will be your perfect choice!",
-        description: "Megacat",
         image: "/images/fish-cat.jpg",
     },
     {
@@ -97,7 +89,6 @@ export const data: CatalogItemModel[] = [
         age: '2 year',
         homeland: 'China (Asia)',
         fullDescription: 'Country of origin: China (Asia). A pug and a horse are a unique duo: an adorable pug and his toy rocking horse. This pug is a cowboy in canine form. And his toy rocking horse is the embodiment of a childhood dream of racing across the vast prairies. P.S. The cowboy pug and the horse are only sold together as they are inseparable friends.',
-        description: "Horse + Pug",
         image: "/images/ponny-pug.jpg",
     },
     {
@@ -108,7 +99,6 @@ export const data: CatalogItemModel[] = [
         age: '1 month',
         homeland: 'Japan (Asia)',
         fullDescription: 'Comedian Goldfish not only entertain, they are also true masters of disguise. They can turn ordinary seaweed into makeshift hats and seashells into fun glasses. These fish will take on all the hard work of entertaining you.',
-        description: "Miracle fish",
         image: "/images/miracle-fish.png",
     },
     {
@@ -119,7 +109,6 @@ export const data: CatalogItemModel[] = [
         age: '1 year',
         homeland: 'UAE (Asia)',
         fullDescription: "Cat Banker - turns ordinary banking transactions into an exciting adventure. He is not only entertaining, he is also a true expert in financial matters. He can turn complex economic terms into funny songs and tax returns into comic books. Don't miss the opportunity to acquire the funniest and most unpredictable cat in the world of finance. Open an account with Cat the Banker and turn managing your money into the epicenter of financial humor and endless laughter.",
-        description: "Cat banker",
         image: "/images/banker-cat.png",
     },
     {
@@ -130,7 +119,6 @@ export const data: CatalogItemModel[] = [
         age: '1 year',
         homeland: 'South Korea (Asia)',
         fullDescription: "A cat with a board doesn't just iron clothes, it creates furry wonders! She can turn ordinary sheets into soft clouds and shirts into perfectly ironed works of art. Tired of wrinkled sheets and unironed clothes? Do you dream of a home assistant who will not only purr on your lap, but will also take care of the impeccable appearance of your wardrobe? The cat with the board is the cutest and hardest working cat in the world! She will turn ironing into an exciting adventure full of purring, gentle touches and charming pranks. Each ironed item will be filled with warmth, comfort and love.",
-        description: "Cat with board",
         image: "/images/cat-with-board.png",
     },
     {
@@ -141,7 +129,6 @@ export const data: CatalogItemModel[] = [
         age: '3.5 year',
         homeland: 'France (Europe)',
         fullDescription: 'Enjoy delicious pizza and fun moments with Pizza Cat and Sous Chef Rat. They create culinary masterpieces! They will take on all the difficult work of making pizza. The cat kneads the dough with the grace of a ballerina, and the rat expertly wields a cheese grater. With them, your pizza will become a source of endless surprises and unstoppable fun.',
-        description: "Cat and rat",
         image: "/images/cat-and-rat.png",
     },
     {
@@ -152,7 +139,6 @@ export const data: CatalogItemModel[] = [
         age: '3 year',
         homeland: 'Mexico (North America)',
         fullDescription: 'The Traveler Cat is the most inquisitive and adventurous cat in the world! He will turn every trip into an exciting adventure full of purrs, gentle touches and adorable pranks. From conquering mountain peaks to exploring the depths of the sea, he will always be there to share your greatest moments. It will turn an ordinary tent into a cozy nest, and a backpack into a reliable companion on long journeys. With it, your holiday will become a source of endless surprises and joyful emotions.',
-        description: "Cat traveler",
         image: "/images/traveler-cat.png",
     },
     {
@@ -163,7 +149,6 @@ export const data: CatalogItemModel[] = [
         age: '4 months',
         homeland: 'Norway (Eurasia)',
         fullDescription: 'Scooter Cat - This amazing cat is the ultimate scooter master, capable of performing the most difficult tricks with amazing ease and style. Incomparable Skating Skills: Licensed professional stunt cat with years of experience. Exceptional balance, coordination and control. Ability to perform complex tricks including backflips, flips and grinds.',
-        description: "Cat on a scooter",
         image: "/images/scooter-cat.jpg",
     },
 ];

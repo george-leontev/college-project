@@ -15,7 +15,7 @@ export const CardComponent = ({ data, onBuyClick }: CardComponentProps) => {
             />
             <CardContent sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '50px' }}>
                 <Typography variant="h5" component="div">
-                    {data.description}
+                    {data.name}
                 </Typography>
                 <Typography sx={{ marginLeft: '30px' }} variant="h5" component="div">
                     <p style={{ backgroundColor: '#dae2e5', padding: '6px', borderRadius: '8px' }}>1500 $</p>

@@ -1,0 +1,20 @@
+services:
+  web-api:
+    container_name: web-api
+    build:
+      dockerfile: Dockerfile
+      context: ./web-api
+    ports:
+      - 8000:8000
+    restart: always
+    depends_on:
+      - college_database
+
+  college_database:
+    container_name: college_database
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=abcdef
+    ports:
+      - 5432:5432

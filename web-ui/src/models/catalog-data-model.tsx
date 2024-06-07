@@ -6,6 +6,5 @@ export type CatalogItemModel = {
     age: string,
     homeland: string,
     fullDescription: string,
-    description: string,
     image: string,
 }
