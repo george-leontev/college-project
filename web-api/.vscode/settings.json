@@ -7,5 +7,13 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/__pycache__": true
-    }
+    },
+    "pylint.args": [
+        "--disable=C0114,C0115,C0116"
+    ],
+    "pylint.path": [
+        "${workspaceFolder}/web-api/.venv/bin/python",
+        "-m",
+        "pylint"
+    ],
 }

@@ -8,5 +8,8 @@
         "**/Thumbs.db": true,
         "**/web-api": true,
         "**/web-ui": true,
-    }
+    },
+    "cSpell.words": [
+        "Timeweb"
+    ]
 }

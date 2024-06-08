@@ -1,4 +1,14 @@
 services:
+  web-ui:
+    container_name: web-ui
+    build:
+      dockerfile: Dockerfile
+      context: ./web-ui
+    ports:
+      - 5000:80
+    depends_on:
+      - web-api
+
   web-api:
     container_name: web-api
     build:

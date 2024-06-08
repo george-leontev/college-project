@@ -1,6 +1,6 @@
 import './main-page.css';
 
-import { IconButton, Link, Rating, Typography } from "@mui/material";
+import { IconButton, Rating, Typography } from "@mui/material";
 
 import { Header } from "../../components/header/header";
 import { TelegramIcon, VKIcon, InstagramIcon, TwitterIcon } from '../../icons/icons';

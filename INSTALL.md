@@ -3,8 +3,13 @@
 ## 1. Prerequisites
 
 - VSCode
-- Python v3.12
+- Python v3.8 or above
+- NodeJs (the latest long term support version)
 - Docker Engine (Linux) / Docker Desktop (Windows or MacOs) for running inside docker containers
+
+Attention! If you suppose to use dockers for running this project you may need to use mirrors to access the docker hub repositories.
+
+We use Timeweb Cloud mirror <https://dockerhub.timeweb.cloud> to have an access from our country.
 
 ## 2. Installation guide (Linux)
 
@@ -42,7 +47,7 @@ service docker status
 ### 2.1.5. Start the postgres database server in a docker container as the selected service in the docker compose bundle
 
 ```bash
-    docker compose  -f "docker-compose.yaml" up -d --build college_database
+docker compose  -f "docker-compose.yaml" up -d --build database-server
 ```
 
 make sure that the database server is running!
@@ -56,3 +61,47 @@ http://localhost:8000/redoc
 ```
 
 ![image info](.assets/images/web-api-screen-1.png)
+
+### 2.2. Web UI
+
+#### 2.2.1. Install NodeJs and npm
+
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+exit
+nvm install lts
+npm use lts
+node -v
+npm -v
+```
+
+#### 2.2.2. Select the web ui project folder and install dependencies
+
+```bash
+cd ./web-ui
+npm install
+```
+
+### 2.2.3. Make sure that the database server is running in the docker container
+
+```bash
+docker compose  -f "docker-compose.yaml" up -d --build database-server
+```
+
+### 2.2.4. Run web api in the docker container or in the debug mode using VSCode
+
+```bash
+docker compose  -f "docker-compose.yaml" up -d --build database-server web-api
+```
+
+#### 2.1.5. Try to launch the web ui project
+
+```bash
+npm run start
+```
+
+and open a start page of an application in the browser
+
+```console
+http://localhost:3000
+```

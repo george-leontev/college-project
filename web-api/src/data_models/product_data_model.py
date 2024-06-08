@@ -15,5 +15,5 @@ class ProductDataModel(BaseDataModel):
     specialization: Mapped[str] = mapped_column(String(64))
     age: Mapped[str] = mapped_column(String(32))
     homeland: Mapped[str] = mapped_column(String(32))
-    full_description: Mapped[str] = mapped_column(String(512))
+    full_description: Mapped[str] = mapped_column(String(1024))
     image: Mapped[str] = mapped_column(String(64))

@@ -1,11 +1,11 @@
 import { Link } from "@mui/material";
-import { CatalogIcon, CartIcon, AboutUsIcon, SettingsIcon, LoginIcon, HomeIcon } from "../../icons/icons";
+import { CatalogIcon, CartIcon, SettingsIcon, LoginIcon, HomeIcon } from "../../icons/icons";
 
 
 export const Navbar = () => {
 
     return (
-        <div className='main-nav-bar'> 
+        <div className='main-nav-bar'>
             <Link underline="none" href='/home'>
                 <button className='default-button'>
                     <p>Home</p>
