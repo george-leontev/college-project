@@ -12,27 +12,26 @@ import { CatalogItemModel } from '../../models/catalog-data-model';
 
 
 export const CatalogPage = () => {
+    const columns = 3;
     const navigate = useNavigate();
-
     const [data, setData] = useState<CatalogItemModel[]>([]);
 
-    const columns = 3;
     const rows = useMemo(() => {
         return Math.floor((data.length / columns) + (data.length % columns > 0 ? 1 : 0));
     }, [data]);
 
     useEffect(() => {
         (async () => {
-            const response = await axios.request({
-                url: 'http://localhost:8000/api/products',
-                method: 'GET',
-            });
-
-            const data = response.data as CatalogItemModel[];
-            setData(data);
-            console.log(data);
-        }
-        )();
+            try {
+                const response = await axios.request({
+                    url: 'http://localhost:8000/api/products',
+                    method: 'GET',
+                }); const data = response.data as CatalogItemModel[];
+                setData(data);
+            } catch (error) {
+                console.error(error);
+            }
+        })();
     }, []);
 
     return data.length > 0 ?
@@ -51,7 +50,7 @@ export const CatalogPage = () => {
                                         return (
                                             <Grid key={c}>
                                                 {data.length >= (index + 1) ? (
-                                                    <CardComponent data={data[index]} onBuyClick={() => {
+                                                    <CardComponent catalogItem ={data[index]} onBuyClick={() => {
                                                         navigate(`/product/${data[index].id}`);
                                                     }} />
                                                 ) : null}

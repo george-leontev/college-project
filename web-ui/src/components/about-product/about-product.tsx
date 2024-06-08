@@ -2,31 +2,43 @@ import { Typography } from "@mui/material";
 import { Link } from '@mui/material';
 
 import { ArrowIcon } from "../../icons/icons";
-import { data } from "../../data/catalog-data";
 import { CatalogItemModel } from "../../models/catalog-data-model";
 
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 
 export const AboutProduct = () => {
 
     let { catalogItemId } = useParams();
-    const [catalogItem, setCatalogItem] = useState<CatalogItemModel>();
+    const navigate = useNavigate();
+
+    const [catalogItem, setCatalogItem] = useState<CatalogItemModel | null>(null);
 
     useEffect(() => {
-        const catalogItem = data.find((item) => {
-            return catalogItemId === item.id;
-        });
-
-        setCatalogItem(catalogItem);
+        (async () => {
+            try {
+                const response = await axios.request({
+                    url: `http://localhost:8000/api/products/${catalogItemId}`,
+                    method: 'GET',
+                });
+                const catalogItem = response.data as CatalogItemModel;
+                setCatalogItem(catalogItem);
+            } catch (error) {
+                console.error(error);
+            }
+        })();
     }, [catalogItemId]);
+
 
     return (
         <div style={{ display: 'flex', gap: '30px', }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                    <Link underline='none' href='/catalog'>
+                    <Link underline='none' onClick={() => {
+                        navigate(`/catalog`);
+                    }}>
                         <button className='cart-back-button'><ArrowIcon style={{ fontSize: '24px' }} /> Back</button>
                     </Link>
                 </div>
@@ -81,6 +93,5 @@ export const AboutProduct = () => {
                 </div>
             </div>
         </div>
-
     );
 }
