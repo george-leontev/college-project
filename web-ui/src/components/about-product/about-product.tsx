@@ -2,14 +2,14 @@ import { Typography } from "@mui/material";
 import { Link } from '@mui/material';
 
 import { ArrowIcon } from "../../icons/icons";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { data } from "../../data/catalog-data";
 import { CatalogItemModel } from "../../models/catalog-data-model";
 
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 
 export const AboutProduct = () => {
-
 
     let { catalogItemId } = useParams();
     const [catalogItem, setCatalogItem] = useState<CatalogItemModel>();
