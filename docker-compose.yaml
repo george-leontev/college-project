@@ -8,10 +8,10 @@ services:
       - 8000:8000
     restart: always
     depends_on:
-      - college_database
+      - database-server
 
-  college_database:
-    container_name: college_database
+  database-server:
+    container_name: database-server
     image: postgres
     environment:
       - POSTGRES_USER=postgres

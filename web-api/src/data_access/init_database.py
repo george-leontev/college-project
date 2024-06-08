@@ -1,3 +1,4 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.schema import CreateSchema
@@ -6,9 +7,10 @@ from sqlalchemy_utils import database_exists, drop_database, create_database
 from src.data_models.base_data_model import BaseDataModel
 from src.data_models.product_data_model import ProductDataModel
 
+is_production = os.environ.get("ENV") == "production"
 
 engine = create_engine(
-    "postgresql+psycopg2://postgres:abcdef@college_database:5432/college_database"
+    f"postgresql+psycopg2://postgres:abcdef@{'database-server' if is_production else 'localhost'}:5432/college_project"
 )
 
 Session = sessionmaker(bind=engine)
