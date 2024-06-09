@@ -24,7 +24,7 @@ export const CatalogPage = () => {
         (async () => {
             try {
                 const response = await axios.request({
-                    url: 'http://localhost:8000/api/products',
+                    url: 'http://91.144.143.40:15022/api/products',
                     method: 'GET',
                 }); const data = response.data as CatalogItemModel[];
                 setData(data);

@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
       context: ./web-ui
     ports:
-      - 5000:80
+      - 5020:80
     depends_on:
       - web-api
 
@@ -15,7 +15,7 @@ services:
       dockerfile: Dockerfile
       context: ./web-api
     ports:
-      - 8000:8000
+      - 5022:8000
     restart: always
     depends_on:
       - database-server

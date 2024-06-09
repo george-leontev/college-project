@@ -20,7 +20,7 @@ export const AboutProduct = () => {
         (async () => {
             try {
                 const response = await axios.request({
-                    url: `http://localhost:8000/api/products/${catalogItemId}`,
+                    url: `http://91.144.143.40:15022/api/products/${catalogItemId}`,
                     method: 'GET',
                 });
                 const catalogItem = response.data as CatalogItemModel;
