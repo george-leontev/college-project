@@ -4,6 +4,7 @@ import { Icon, Typography } from '@mui/material';
 
 import { IoLogoOctocat as LogoCatIcon } from "react-icons/io5";
 import { LoginForm } from '../../components/login-form/login-form';
+import { AppConsts } from '../../utils/app-consts';
 
 
 export const LoginPage = () => {
@@ -19,7 +20,7 @@ export const LoginPage = () => {
                 <LoginForm />
             </div>
 
-            <img className='registration-image' src="/images/registration-image.jpg" alt="img" />
+            <img className='registration-image' src={`${AppConsts.webApiStatic}/images/registration-image.jpg`} alt="img" />
         </div>
     );
 }
