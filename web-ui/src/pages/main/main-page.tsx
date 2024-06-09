@@ -4,6 +4,7 @@ import { IconButton, Rating, Typography } from "@mui/material";
 
 import { Header } from "../../components/header/header";
 import { TelegramIcon, VKIcon, InstagramIcon, TwitterIcon } from '../../icons/icons';
+import { AppConsts } from '../../utils/app-consts';
 
 
 export const MainPage = () => {
@@ -33,7 +34,7 @@ export const MainPage = () => {
                     <div style={{ position: 'absolute', fontSize: '70px', top: '-52px', fontFamily: 'Monospace' }}>
                         Help in finding new friends
                     </div>
-                    <img style={{ position: 'relative', zIndex: '1', width: '560px' }} src="images/home-page-cat.webp" alt="home cat" />
+                    <img style={{ position: 'relative', zIndex: '1', width: '560px' }} src={`${AppConsts.webApiStatic}/images/home-page-cat.webp`} alt="home cat" />
                 </div>
             </div>
         </div>
