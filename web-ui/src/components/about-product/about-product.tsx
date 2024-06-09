@@ -10,9 +10,8 @@ import { AppConsts } from "../../utils/app-consts";
 
 
 export const AboutProduct = () => {
-
-    let { catalogItemId } = useParams();
     const navigate = useNavigate();
+    const { catalogItemId } = useParams();
 
     const [catalogItem, setCatalogItem] = useState<CatalogItemModel | null>(null);
 
@@ -23,6 +22,7 @@ export const AboutProduct = () => {
                     url: `${AppConsts.webApiRoot}/products/${catalogItemId}`,
                     method: 'GET',
                 });
+
                 const catalogItem = response.data as CatalogItemModel;
                 setCatalogItem(catalogItem);
             } catch (error) {
