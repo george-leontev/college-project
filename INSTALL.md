@@ -105,3 +105,5 @@ and open a start page of an application in the browser
 ```console
 http://localhost:3000
 ```
+
+![image info](.assets/images/web-ui-screen-1.png)

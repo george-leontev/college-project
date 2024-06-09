@@ -6,6 +6,7 @@ export { IoLogoOctocat as LogoCatIcon } from "react-icons/io5";
 export { CiSettings as SettingsIcon } from "react-icons/ci";
 export { CiShoppingCart as CartIcon } from "react-icons/ci";
 export { CiLogin as LoginIcon } from "react-icons/ci";
+export { CiLogout as LogoutIcon } from "react-icons/ci";
 export { GoTasklist as CatalogIcon } from "react-icons/go";
 export { CiCircleInfo as AboutUsIcon } from "react-icons/ci";
 export { SlSocialVkontakte as VKIcon } from "react-icons/sl";

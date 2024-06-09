@@ -12,6 +12,7 @@ app = FastAPI(title="KIT college project")
 
 origins = [
     "http://localhost:3000",
+    "http://91.144.143.40:15020"
 ]
 
 app.add_middleware(

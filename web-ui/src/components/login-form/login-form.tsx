@@ -31,7 +31,7 @@ export const LoginForm = () => {
             </FormControl>
 
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '10px' }}>
-                <Link underline="none" href='http://localhost:3000/catalog'>
+                <Link underline="none" href='/catalog'>
                     <button className='registration-button'>Login</button>
                 </Link>
 

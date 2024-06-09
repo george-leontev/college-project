@@ -4,18 +4,19 @@ import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/mate
 import './card.css';
 
 
-export const CardComponent = ({ data, onBuyClick }: CardComponentProps) => {
+export const CardComponent = ({ catalogItem, onBuyClick }: CardComponentProps) => {
+
 
     return (
         <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', border: 'solid 1px #a2a2a2', borderRadius: '20px', width: '410px' }}>
             <CardMedia
                 sx={{ height: 320, width: 280 }}
-                image={data.image}
+                image={catalogItem.image}
                 title="caaat"
             />
             <CardContent sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '50px' }}>
                 <Typography variant="h5" component="div">
-                    {data.name}
+                    {catalogItem.name}
                 </Typography>
                 <Typography sx={{ marginLeft: '30px' }} variant="h5" component="div">
                     <p style={{ backgroundColor: '#dae2e5', padding: '6px', borderRadius: '8px' }}>1500 $</p>
