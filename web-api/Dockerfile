@@ -5,6 +5,7 @@ WORKDIR /app
 COPY requirements.txt /app
 
 COPY src /app/src
+COPY static /app/static
 
 RUN python3 -m pip install -r requirements.txt
 

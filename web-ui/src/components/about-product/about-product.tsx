@@ -42,7 +42,7 @@ export const AboutProduct = () => {
                         <button className='cart-back-button'><ArrowIcon style={{ fontSize: '24px' }} /> Back</button>
                     </Link>
                 </div>
-                <img src={catalogItem?.image} alt={catalogItem?.name} style={{ width: '450px', height: '480px', border: '1px solid #a8a8a8', borderRadius: '20px' }} />
+                <img src={`${AppConsts.webApiStatic}${catalogItem?.image}`} alt={catalogItem?.name} style={{ width: '450px', height: '480px', border: '1px solid #a8a8a8', borderRadius: '20px' }} />
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', marginTop: '50px' }}>
