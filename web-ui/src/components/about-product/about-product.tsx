@@ -89,7 +89,7 @@ export const AboutProduct = () => {
 
                 <div>
                     <p style={{ color: 'black', fontWeight: 'bold', fontSize: '30px' }}>{catalogItem?.name}</p>
-                    <p style={{ width: '760px', fontSize: '18px' }}>{catalogItem?.fullDescription}</p>
+                    <p style={{ width: '760px', fontSize: '18px' }}>{catalogItem?.full_description}</p>
                 </div>
             </div>
         </div>

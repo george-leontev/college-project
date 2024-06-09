@@ -5,6 +5,6 @@ export type CatalogItemModel = {
     specialization: string,
     age: string,
     homeland: string,
-    fullDescription: string,
+    full_description: string,
     image: string,
 }
