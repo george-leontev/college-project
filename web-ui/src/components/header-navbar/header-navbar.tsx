@@ -1,5 +1,5 @@
 import { Link } from "@mui/material";
-import { CatalogIcon, CartIcon, SettingsIcon, LoginIcon, HomeIcon } from "../../icons/icons";
+import { CatalogIcon, CartIcon, SettingsIcon, LogoutIcon, HomeIcon } from "../../icons/icons";
 
 
 export const Navbar = () => {
@@ -20,14 +20,14 @@ export const Navbar = () => {
                 </button>
             </Link>
 
-            <Link underline="none" href='/cart'>
+            <Link underline="none" href='/home'>
                 <button className='default-button'>
                     <p>Cart</p>
                     <CartIcon style={{ fontSize: '24px' }} />
                 </button>
             </Link>
 
-            <Link underline="none" href='/catalog'>
+            <Link underline="none" href='/home'>
                 <button className='default-button'>
                     <p>Settings</p>
                     <SettingsIcon style={{ fontSize: '24px' }} />
@@ -36,8 +36,8 @@ export const Navbar = () => {
 
             <Link underline="none" href='/login'>
                 <button className='default-button'>
-                    <p>Log in</p>
-                    <LoginIcon style={{ fontSize: '24px' }} />
+                    <p>Log out</p>
+                    <LogoutIcon style={{ fontSize: '24px' }} />
                 </button>
             </Link>
         </div>
