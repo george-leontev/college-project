@@ -1,12 +1,12 @@
+import axios from "axios";
+import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Typography } from "@mui/material";
 import { Link } from '@mui/material';
 
 import { ArrowIcon } from "../../icons/icons";
 import { CatalogItemModel } from "../../models/catalog-data-model";
-
-import { useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { AppConsts } from "../../utils/app-consts";
 
 
 export const AboutProduct = () => {
@@ -20,7 +20,7 @@ export const AboutProduct = () => {
         (async () => {
             try {
                 const response = await axios.request({
-                    url: `http://91.144.143.40:15022/api/products/${catalogItemId}`,
+                    url: `${AppConsts.webApiRoot}/products/${catalogItemId}`,
                     method: 'GET',
                 });
                 const catalogItem = response.data as CatalogItemModel;

@@ -1,15 +1,14 @@
-import './catalog-page.css';
-
-import { Header } from "../../components/header/header";
-import { CardComponent } from "../../components/card/card";
-
+import axios from 'axios';
+import { useEffect, useMemo, useState } from 'react';
 import { Box, Grid } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
-import axios from 'axios';
-import { useEffect, useMemo, useState } from 'react';
+import { Header } from "../../components/header/header";
+import { CardComponent } from "../../components/card/card";
 import { CatalogItemModel } from '../../models/catalog-data-model';
+import { AppConsts } from '../../utils/app-consts';
 
+import './catalog-page.css';
 
 export const CatalogPage = () => {
     const columns = 3;
@@ -24,7 +23,7 @@ export const CatalogPage = () => {
         (async () => {
             try {
                 const response = await axios.request({
-                    url: 'http://91.144.143.40:15022/api/products',
+                    url: `${AppConsts.webApiRoot}/products`,
                     method: 'GET',
                 }); const data = response.data as CatalogItemModel[];
                 setData(data);
@@ -50,7 +49,7 @@ export const CatalogPage = () => {
                                         return (
                                             <Grid key={c}>
                                                 {data.length >= (index + 1) ? (
-                                                    <CardComponent catalogItem ={data[index]} onBuyClick={() => {
+                                                    <CardComponent catalogItem={data[index]} onBuyClick={() => {
                                                         navigate(`/product/${data[index].id}`);
                                                     }} />
                                                 ) : null}
