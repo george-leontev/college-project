@@ -1,11 +1,10 @@
-import './main-page.css';
-
 import { IconButton, Rating, Typography } from "@mui/material";
 
 import { Header } from "../../components/header/header";
 import { TelegramIcon, VKIcon, InstagramIcon, TwitterIcon } from '../../icons/icons';
 import { AppConsts } from '../../utils/app-consts';
 
+import './main-page.css';
 
 export const MainPage = () => {
     return (
